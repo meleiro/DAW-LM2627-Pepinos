@@ -1,0 +1,3004 @@
+<!--
+    <!DOCTYPE html>
+    Indica al navegador que este documento utiliza HTML5.
+
+    No es realmente una etiqueta HTML, sino una declaración.
+    Debe aparecer al principio del documento.
+-->
+<!DOCTYPE html>
+
+
+<!--
+    <html> es la etiqueta principal de cualquier documento HTML.
+    Todo el contenido de nuestra página estará dentro de ella.
+
+    lang="es" indica que el idioma principal de la página es español.
+    Esto ayuda a:
+    - Navegadores.
+    - Motores de búsqueda como Google.
+    - Lectores de pantalla y herramientas de accesibilidad.
+-->
+<html lang="es">
+
+
+<!--
+    <head> contiene información SOBRE la página.
+
+    IMPORTANTE:
+    Normalmente, lo que colocamos dentro de <head>
+    NO aparece directamente dentro de la página.
+
+    Aquí solemos poner:
+    - El título de la página.
+    - Configuración de caracteres.
+    - Configuración para móviles.
+    - Archivos CSS.
+    - Metadatos.
+    - Etc.
+-->
+
+<head>
+
+    <!--
+        charset="UTF-8" establece la codificación de caracteres.
+
+        UTF-8 permite utilizar correctamente caracteres como:
+        á, é, í, ó, ú
+        ñ
+        ¿?
+        ¡!
+        €
+
+        Es especialmente importante en páginas escritas en español.
+    -->
+    <meta charset="UTF-8">
+
+
+    <!--
+        Esta etiqueta ayuda a que la página se vea correctamente
+        en teléfonos móviles y tablets.
+
+        name="viewport"
+        Le indica al navegador que vamos a configurar el área visible.
+
+        width=device-width
+        Hace que el ancho de la página coincida con el ancho
+        de la pantalla del dispositivo.
+
+        initial-scale=1.0
+        Indica que el nivel inicial de zoom será del 100%.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--
+        <title> establece el título de la página.
+
+        Este texto NO aparece normalmente dentro del contenido
+        de la página.
+
+        Aparece en la pestaña del navegador.
+
+        También es importante para los buscadores.
+    -->
+    <title>Pepinos Manuel</title>
+
+</head>
+
+
+<!--
+    <body> contiene TODO el contenido visible de nuestra página web.
+
+    Por ejemplo:
+    - Títulos
+    - Párrafos
+    - Imágenes
+    - Enlaces
+    - Botones
+    - Formularios
+    - Tablas
+    - Etc.
+-->
+
+<body>
+
+
+    <!--
+        <h1> significa "Heading 1" o encabezado de nivel 1.
+
+        Es el título PRINCIPAL de la página.
+
+        Los encabezados HTML van desde:
+
+        <h1> → título más importante
+        <h2>
+        <h3>
+        <h4>
+        <h5>
+        <h6> → título menos importante
+
+        Normalmente debería existir un título principal <h1>
+        que describa el contenido de la página.
+    -->
+    <h1>Pepinos Manolo</h1>
+
+
+    <!--
+        <h2> es un encabezado de segundo nivel.
+
+        Se utiliza para crear una sección que depende
+        jerárquicamente del <h1>.
+    -->
+    <h2>Los mejores pepinos</h2>
+
+
+    <!--
+        <p> significa "paragraph".
+
+        Se utiliza para escribir un párrafo de texto.
+
+        El navegador deja automáticamente cierto espacio
+        antes y después de cada párrafo.
+    -->
+    <p>
+        Aquí vas a poder comprar las mejores variedades de pepino de España y Portual
+    </p>
+
+
+    <!--
+        <br> significa "line break".
+
+        Introduce un SALTO DE LÍNEA.
+
+        A diferencia de otras etiquetas, <br> no necesita
+        una etiqueta de cierre.
+
+        Es decir:
+
+        CORRECTO:
+        <br>
+
+        No necesitamos escribir:
+        <br></br>
+
+        NOTA:
+        No es recomendable utilizar muchos <br> para separar
+        elementos visualmente. Para eso normalmente utilizaremos CSS.
+    -->
+    <br>
+
+
+    <!--
+        Aquí tenemos otro párrafo completamente independiente.
+    -->
+    <p>Otro párrafo</p>
+
+
+    <!--
+        <a> sirve para crear un ENLACE.
+
+        La "a" viene de "anchor" (ancla).
+
+        El atributo href indica a qué dirección queremos
+        enviar al usuario cuando haga clic.
+
+        En este caso:
+
+        href="https://www.google.com"
+
+        significa que al pulsar sobre "Haz clic aquí",
+        el navegador irá a Google.
+    -->
+    <a href="https://www.google.com">Haz clic aquí</a>
+
+
+    <!--
+        <img> permite mostrar una imagen en nuestra página.
+
+        Esta etiqueta NO necesita etiqueta de cierre.
+
+        Vamos a analizar sus atributos:
+
+
+        src="pepino.avif"
+
+        src significa "source" (fuente/origen).
+
+        Indica dónde está el archivo de imagen que queremos mostrar.
+
+        En este caso estamos diciendo que existe un archivo llamado:
+
+        pepino.avif
+
+        en la misma carpeta que nuestro archivo HTML.
+
+
+        --------------------------
+
+
+        width="200"
+
+        Establece el ancho de la imagen en 200 píxeles.
+
+        En proyectos más grandes, normalmente el tamaño
+        de las imágenes se controla mediante CSS.
+
+
+        --------------------------
+
+
+        alt="Pepino sabroso y dos rodajas"
+
+        alt significa "alternative text".
+
+        Es el texto alternativo de la imagen.
+
+        Es MUY IMPORTANTE por varias razones:
+
+        1. Si la imagen no carga, puede mostrarse este texto.
+
+        2. Los lectores de pantalla pueden utilizarlo para
+           explicar la imagen a personas con discapacidad visual.
+
+        3. Ayuda a describir el contenido de la imagen.
+
+
+        --------------------------
+
+
+        title="un pepino"
+
+        Añade información adicional sobre la imagen.
+
+        En muchos navegadores, al dejar el ratón encima de
+        la imagen durante unos segundos aparece este texto.
+    -->
+    <br>
+    <br>
+    <img src="pepino.avif" width="200" alt="Pepino sabroso y dos rodajas" title="un pepino">
+
+
+    <!--
+============================================================================
+LISTAS, TABLAS Y FORMULARIOS EN HTML
+============================================================================
+
+En este ejemplo vamos a trabajar tres estructuras fundamentales de HTML:
+
+    1. LISTAS
+       - <ul>  Lista no ordenada
+       - <ol>  Lista ordenada
+       - <li>  Elemento de una lista
+
+    2. TABLAS
+       - <table>   Tabla
+       - <thead>   Cabecera de la tabla
+       - <tbody>   Cuerpo de la tabla
+       - <tfoot>   Pie de la tabla
+       - <tr>      Fila
+       - <th>      Celda de encabezado
+       - <td>      Celda de datos
+
+    3. FORMULARIOS
+       - <form>    Formulario
+       - <label>   Etiqueta de un campo
+       - <input>   Campo de entrada
+       - <button>  Botón
+
+También veremos algunos atributos:
+
+    href
+    colspan
+    type
+    placeholder
+    required
+
+============================================================================
+-->
+
+
+    <!--
+============================================================================
+1. LISTA NO ORDENADA
+============================================================================
+
+<h2> representa un encabezado de nivel 2.
+
+Lo utilizamos para crear un título dentro de una sección de la página.
+-->
+
+    <h2>Tipos de pepino</h2>
+
+
+    <!--
+<ul> significa "Unordered List".
+
+Es decir:
+
+    Lista no ordenada.
+
+Una lista no ordenada muestra normalmente sus elementos utilizando
+viñetas:
+
+    • elemento
+    • elemento
+    • elemento
+
+Cada elemento de la lista debe escribirse utilizando <li>.
+-->
+
+    <ul>
+
+        <!--
+    <li> significa "List Item".
+
+    Representa UN elemento dentro de la lista.
+    -->
+
+        <li>
+
+            <!--
+        <a> crea un enlace.
+
+        El atributo href indica la dirección a la que queremos
+        navegar cuando el usuario haga clic.
+
+        En este caso:
+
+            href="https://www.google.com/"
+
+        significa que el navegador abrirá esa dirección.
+
+        La estructura básica de un enlace es:
+
+            <a href="DIRECCION">Texto visible</a>
+        -->
+
+            <a href="https://www.google.com/">
+                Pepino albino
+            </a>
+
+        </li>
+
+        <li>Pepino moreno</li>
+
+        <li>Pepino kirby</li>
+
+    </ul>
+
+
+    <!--
+============================================================================
+2. LISTA ORDENADA
+============================================================================
+
+<ol> significa "Ordered List".
+
+Es una lista ORDENADA.
+
+A diferencia de <ul>, el navegador numera automáticamente
+los elementos:
+
+    1. Pepino albino
+    2. Pepino moreno
+    3. Pepino kirby
+
+Nosotros NO escribimos los números.
+
+El navegador los genera automáticamente.
+-->
+
+    <ol>
+
+        <li>
+            <a href="https://www.google.com/">
+                Pepino albino
+            </a>
+        </li>
+
+        <li>Pepino moreno</li>
+
+        <li>Pepino kirby</li>
+
+    </ol>
+
+
+    <!--
+============================================================================
+3. TABLAS
+============================================================================
+
+Ahora vamos a crear una tabla para representar una lista de pedidos.
+
+Una tabla se crea utilizando:
+
+    <table>
+
+Dentro de una tabla normalmente distinguimos tres zonas:
+
+    <thead>   Cabecera
+    <tbody>   Datos
+    <tfoot>   Pie/resumen
+
+Visualmente podemos imaginar:
+
+    TABLE
+      |
+      +--- THEAD
+      |      Cabeceras
+      |
+      +--- TBODY
+      |      Datos
+      |
+      +--- TFOOT
+             Resumen
+-->
+
+    <h2>LISTA DE PEDIDOS</h2>
+
+
+    <!--
+<table> crea la tabla.
+
+border="1" hace que el navegador dibuje un borde.
+
+IMPORTANTE:
+
+El atributo border es una forma antigua de controlar la presentación.
+
+En HTML moderno sería preferible realizar esto mediante CSS:
+
+    table {
+        border-collapse: collapse;
+    }
+
+    td, th {
+        border: 1px solid black;
+    }
+
+Lo utilizamos aquí únicamente porque permite visualizar fácilmente
+la estructura de la tabla mientras estamos aprendiendo HTML.
+-->
+
+    <table border="1">
+
+
+        <!--
+    ========================================================================
+    CABECERA DE LA TABLA
+    ========================================================================
+
+    <thead> contiene las filas que forman la cabecera de la tabla.
+    -->
+
+        <thead>
+
+
+            <!--
+        <tr> significa "Table Row".
+
+        Es decir:
+
+            FILA DE TABLA
+
+        Todo lo que pongamos dentro de este <tr> pertenece
+        a la misma fila.
+        -->
+
+            <tr>
+
+
+                <!--
+            <th> significa "Table Header".
+
+            Representa una celda de CABECERA.
+
+            Los navegadores normalmente muestran su contenido
+            en negrita y centrado.
+            -->
+
+                <th>Nº PEDIDO</th>
+
+                <th>FECHA</th>
+
+                <th>IMPORTE</th>
+
+                <th>VER</th>
+
+
+                <!--
+            colspan permite que una celda ocupe varias columnas.
+
+            En este caso:
+
+                colspan="2"
+
+            significa:
+
+                "Esta celda ocupará el espacio de DOS columnas."
+
+            Lo hacemos porque debajo tendremos:
+
+                EDITAR
+                BORRAR
+
+            Es decir, dos columnas relacionadas con las acciones.
+
+                     ACCIÓN
+                    /      \
+                EDITAR    BORRAR
+
+            Por eso ACCIÓN ocupa dos columnas.
+            -->
+
+                <th colspan="2">ACCIÓN</th>
+
+            </tr>
+
+        </thead>
+
+
+        <!--
+    ========================================================================
+    CUERPO DE LA TABLA
+    ========================================================================
+
+    <tbody> contiene los datos principales de la tabla.
+
+    Aquí tendremos los diferentes pedidos.
+    -->
+
+        <tbody>
+
+
+            <!-- ================================================================
+             PEDIDO 1
+             ================================================================ -->
+
+            <tr>
+
+                <!--
+            <td> significa "Table Data".
+
+            Representa una celda normal que contiene datos.
+            -->
+
+                <td>#1234</td>
+
+                <td>12/12/2026</td>
+
+                <td>123,15 €</td>
+
+
+                <!--
+            <button> crea un botón.
+
+            type="button" indica que es un botón normal.
+
+            Por sí solo todavía NO realiza ninguna acción.
+
+            Posteriormente podríamos utilizar JavaScript para detectar
+            cuándo el usuario hace clic sobre él.
+            -->
+
+                <td>
+                    <button type="button">Clic</button>
+                </td>
+
+                <td>
+                    <button type="button">Editar</button>
+                </td>
+
+                <td>
+                    <button type="button">Borrar</button>
+                </td>
+
+            </tr>
+
+
+            <!-- ================================================================
+             PEDIDO 2
+             ================================================================ -->
+
+            <tr>
+
+                <td>#1234</td>
+
+                <td>12/12/2026</td>
+
+                <td>123,15 €</td>
+
+                <td>
+                    <button type="button">Clic</button>
+                </td>
+
+                <td>
+                    <button type="button">Editar</button>
+                </td>
+
+                <td>
+                    <button type="button">Borrar</button>
+                </td>
+
+            </tr>
+
+
+            <!-- ================================================================
+             PEDIDO 3
+             ================================================================ -->
+
+            <tr>
+
+                <td>#1234</td>
+
+                <td>12/12/2026</td>
+
+                <td>123,15 €</td>
+
+                <td>
+                    <button type="button">Clic</button>
+                </td>
+
+                <td>
+                    <button type="button">Editar</button>
+                </td>
+
+                <td>
+                    <button type="button">Borrar</button>
+                </td>
+
+            </tr>
+
+
+            <!-- ================================================================
+             PEDIDO 4
+             ================================================================ -->
+
+            <tr>
+
+                <td>#1234</td>
+
+                <td>12/12/2026</td>
+
+                <td>123,15 €</td>
+
+                <td>
+                    <button type="button">Clic</button>
+                </td>
+
+                <td>
+                    <button type="button">Editar</button>
+                </td>
+
+                <td>
+                    <button type="button">Borrar</button>
+                </td>
+
+            </tr>
+
+        </tbody>
+
+
+        <!--
+    ========================================================================
+    PIE DE LA TABLA
+    ========================================================================
+
+    <tfoot> representa el pie de la tabla.
+
+    Normalmente se utiliza para:
+
+        - Totales
+        - Sumas
+        - Resúmenes
+        - Información final
+
+    Dentro de <tfoot> seguimos utilizando filas <tr>
+    y celdas <td>.
+    -->
+
+        <tfoot>
+
+            <tr>
+
+
+                <!--
+            Nuestra tabla tiene 6 columnas:
+
+                1. Nº PEDIDO
+                2. FECHA
+                3. IMPORTE
+                4. VER
+                5. EDITAR
+                6. BORRAR
+
+            Queremos que esta celda ocupe TODO el ancho de la tabla.
+
+            Por eso utilizamos:
+
+                colspan="6"
+
+            Es decir:
+
+                "Esta celda ocupa seis columnas."
+            -->
+
+                <td colspan="6">
+                    Total Pedidos: 4
+                </td>
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+
+    <!--
+============================================================================
+4. SALTOS DE LÍNEA
+============================================================================
+
+<br> significa "Line Break".
+
+Produce un salto de línea.
+
+Aquí utilizamos varios para separar visualmente la tabla
+del formulario.
+
+En una página real sería preferible controlar este espacio mediante CSS,
+por ejemplo utilizando margin.
+-->
+
+    <br>
+    <br>
+    <br>
+
+
+    <!--
+============================================================================
+5. FORMULARIO
+============================================================================
+
+Un formulario permite recoger información introducida por el usuario.
+
+Por ejemplo:
+
+    nombre
+    email
+    contraseña
+    edad
+    etc.
+
+La etiqueta principal es:
+
+    <form>
+
+Todos los controles pertenecientes al formulario normalmente estarán
+dentro de esta etiqueta.
+-->
+
+    <h3>Introduce datos de registro:</h3>
+
+
+    <form>
+
+
+        <!--
+    <legend> se utiliza normalmente como título o descripción de un
+    grupo de campos dentro de un <fieldset>.
+
+    Si queremos utilizar la estructura semántica completa sería:
+
+        <fieldset>
+
+            <legend>Datos de registro</legend>
+
+            ...
+
+        </fieldset>
+
+    Por tanto, sería recomendable añadir <fieldset> si queremos
+    utilizar <legend>.
+    -->
+
+        <fieldset>
+
+            <legend>Datos de registro</legend>
+
+            <br>
+
+
+            <!--
+        ====================================================================
+        LABEL + INPUT
+        ====================================================================
+
+        <label> representa la etiqueta descriptiva de un campo.
+
+        En este caso:
+
+            Nombre:
+
+        describe el <input> que aparece dentro del propio <label>.
+
+        Al colocar el input dentro del label estamos asociando
+        ambos elementos.
+        -->
+
+            <label>
+
+                Nombre:
+
+
+                <!--
+            <input> crea un control donde el usuario puede introducir datos.
+
+            type="text"
+            -----------
+            Indica que queremos introducir texto.
+
+
+            placeholder="..."
+            -----------------
+            Muestra un texto de ayuda dentro del campo mientras está vacío.
+
+
+            required
+            --------
+            Indica que el campo es obligatorio.
+
+            Si el usuario intenta enviar el formulario sin rellenarlo,
+            el navegador realizará una validación básica automáticamente.
+            -->
+
+                <input type="text" placeholder="Escribe aquí tu nombre" required>
+
+            </label>
+
+
+            <br>
+            <br>
+
+            <label>
+                Edad:
+
+                <input type="number" min="2" max="5" step="0.1">
+
+            </label>
+            <br>
+            <br>
+            <label>
+                Fecha de nacimiento:
+
+                <input type="date">
+                <br>
+                <br>
+            </label>
+
+            <label>
+                Email:
+
+                <input type="email" placeholder="Escribe aquí tu email" required>
+
+            </label>
+            <br>
+            <br>
+            </label>
+
+            <label>
+                Teléfono:
+
+                <input type="tel" placeholder="Escribe aquí tu teléfono">
+
+            </label>
+            <br>
+            <br>
+            <label>
+                Contraseña:
+
+                <input type="password" minlength="8" placeholder="Contraseña" required>
+
+            </label>
+            <br>
+            <br>
+
+
+            <!--
+        ====================================================================
+        BOTÓN DE ENVÍO
+        ====================================================================
+
+        type="submit" tiene un significado especial.
+
+        Este botón intenta ENVIAR el formulario.
+
+        Esto es diferente de:
+
+            type="button"
+
+        que simplemente crea un botón sin comportamiento de envío.
+
+        Comparación:
+
+            type="button"
+                -> botón genérico
+
+            type="submit"
+                -> envía el formulario
+        -->
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Fecha, Hora y número</legend>
+            <label>
+                Hora:
+                <input type="time">
+            </label>
+
+            <label>
+                Fecha y Hora:
+                <input type="datetime-local">
+            </label>
+            <br>
+            <br>
+            <label>
+                Mes:
+                <input type="month">
+            </label>
+            <br>
+            <br>
+            <label>
+                Semana:
+                <input type="week">
+            </label>
+            <label>
+                Color:
+                <input type="color" value="#FF0000">
+            </label>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Selectores</legend>
+            
+            <fieldset>
+                <legend>Tipo de pepino</legend>
+
+                    <input type="radio" id="moreno" name="tipo_pepino" >
+                    <label>Moreno</label>
+
+                     <input type="radio" id="albino" name="tipo_pepino" checked>
+                    <label>Albino</label>
+
+                     <input type="radio" id="kirby" name="tipo_pepino">
+                    <label>Kirby</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Extras</legend>
+
+                <input type="checkbox" id="ketchup" name="extras">
+                <label>Ketchup</label>
+                <input type="checkbox" id="costilleta" name="extras">
+                <label>Costilleta</label>
+                <input type="checkbox" id="calamares" name="extras">
+                <label>Calamares</label>
+                <input type="checkbox" id="vinagre" name="extras">
+                <label>Vinagre</label>
+                   
+            </fieldset>
+
+        </fieldset>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+
+
+    </form>
+
+    <!--
+============================================================================
+TIPOS DE <input> EN FORMULARIOS HTML
+============================================================================
+
+La etiqueta <input> permite crear diferentes controles dentro de un
+formulario.
+
+Su comportamiento depende principalmente del atributo:
+
+    type="..."
+
+Ejemplo:
+
+    <input type="text">
+
+IMPORTANTE:
+
+El atributo "name" indica el nombre con el que se enviará el dato
+al servidor.
+
+Por ejemplo:
+
+    <input type="text" name="nombre">
+
+Si el usuario escribe:
+
+    José
+
+y el formulario utiliza GET, podríamos recibir:
+
+    ?nombre=José
+
+En PHP:
+
+    $_GET["nombre"]
+
+Si utilizamos POST:
+
+    $_POST["nombre"]
+
+
+============================================================================
+1. INPUT DE TEXTO
+============================================================================
+
+type="text"
+
+Permite introducir texto en una sola línea.
+
+Ejemplo:
+
+    <label>
+        Nombre:
+        <input type="text" name="nombre">
+    </label>
+
+
+Podemos utilizar placeholder para mostrar una ayuda:
+
+    <input
+        type="text"
+        name="nombre"
+        placeholder="Escribe tu nombre"
+    >
+
+
+También podemos hacerlo obligatorio:
+
+    <input
+        type="text"
+        name="nombre"
+        required
+    >
+
+
+Podemos limitar el número de caracteres:
+
+    <input
+        type="text"
+        name="usuario"
+        minlength="3"
+        maxlength="20"
+    >
+
+
+============================================================================
+2. CONTRASEÑA
+============================================================================
+
+type="password"
+
+Permite introducir texto ocultando visualmente los caracteres.
+
+Ejemplo:
+
+    <label>
+        Contraseña:
+        <input
+            type="password"
+            name="password"
+            required
+        >
+    </label>
+
+
+El navegador normalmente mostrará:
+
+    ••••••••••
+
+en lugar del contenido escrito.
+
+IMPORTANTE:
+
+type="password" solamente OCULTA VISUALMENTE los caracteres.
+
+NO cifra la contraseña.
+NO sustituye HTTPS.
+NO significa que debamos guardar la contraseña directamente en la BD.
+
+
+============================================================================
+3. EMAIL
+============================================================================
+
+type="email"
+
+Está pensado para introducir una dirección de correo electrónico.
+
+Ejemplo:
+
+    <label>
+        Email:
+        <input
+            type="email"
+            name="email"
+            placeholder="usuario@ejemplo.com"
+            required
+        >
+    </label>
+
+
+El navegador puede realizar una validación básica del formato.
+
+Por ejemplo:
+
+    usuario@ejemplo.com
+
+puede considerarse válido.
+
+Mientras que:
+
+    pepino
+
+no tiene formato de email.
+
+
+IMPORTANTE:
+
+La validación HTML del navegador NO sustituye la validación
+que debemos realizar posteriormente en el servidor.
+
+Por ejemplo, en PHP:
+
+    filter_var($email, FILTER_VALIDATE_EMAIL);
+
+
+============================================================================
+4. NÚMERO
+============================================================================
+
+type="number"
+
+Permite introducir valores numéricos.
+
+Ejemplo:
+
+    <label>
+        Edad:
+        <input
+            type="number"
+            name="edad"
+        >
+    </label>
+
+
+Podemos establecer límites:
+
+    <input
+        type="number"
+        name="edad"
+        min="16"
+        max="120"
+    >
+
+
+También podemos controlar los incrementos mediante step:
+
+    <input
+        type="number"
+        name="cantidad"
+        min="1"
+        max="10"
+        step="1"
+    >
+
+
+Ejemplo con decimales:
+
+    <input
+        type="number"
+        name="precio"
+        min="0"
+        step="0.01"
+    >
+
+
+============================================================================
+5. TELÉFONO
+============================================================================
+
+type="tel"
+
+Está pensado para introducir números de teléfono.
+
+Ejemplo:
+
+    <label>
+        Teléfono:
+        <input
+            type="tel"
+            name="telefono"
+            placeholder="600 123 123"
+        >
+    </label>
+
+
+IMPORTANTE:
+
+type="tel" no implica necesariamente una validación automática
+completa del número.
+
+Una ventaja importante aparece en dispositivos móviles:
+
+el navegador puede mostrar un teclado adaptado para introducir
+números de teléfono.
+
+
+============================================================================
+6. URL
+============================================================================
+
+type="url"
+
+Está pensado para introducir direcciones web.
+
+Ejemplo:
+
+    <label>
+        Página web:
+        <input
+            type="url"
+            name="web"
+            placeholder="https://www.ejemplo.com"
+        >
+    </label>
+
+
+El navegador puede comprobar de forma básica que el contenido
+tenga formato de URL.
+
+
+============================================================================
+7. BÚSQUEDA
+============================================================================
+
+type="search"
+
+Está pensado para campos de búsqueda.
+
+Ejemplo:
+
+    <label>
+        Buscar:
+        <input
+            type="search"
+            name="q"
+            placeholder="Buscar productos..."
+        >
+    </label>
+
+
+Funcionalmente es parecido a:
+
+    type="text"
+
+pero comunica semánticamente que el campo se utiliza para realizar
+una búsqueda.
+
+Dependiendo del navegador también puede presentar pequeñas
+diferencias visuales o de comportamiento.
+
+
+============================================================================
+8. FECHA
+============================================================================
+
+type="date"
+
+Permite seleccionar una fecha.
+
+Ejemplo:
+
+    <label>
+        Fecha de nacimiento:
+        <input
+            type="date"
+            name="fechaNacimiento"
+        >
+    </label>
+
+
+También podemos establecer límites:
+
+    <input
+        type="date"
+        name="fecha"
+        min="2026-01-01"
+        max="2026-12-31"
+    >
+
+
+El navegador normalmente mostrará un selector de fecha.
+
+
+============================================================================
+9. HORA
+============================================================================
+
+type="time"
+
+Permite seleccionar una hora.
+
+Ejemplo:
+
+    <label>
+        Hora de la cita:
+        <input
+            type="time"
+            name="hora"
+        >
+    </label>
+
+
+También podemos limitar las horas:
+
+    <input
+        type="time"
+        name="hora"
+        min="09:00"
+        max="20:00"
+    >
+
+
+============================================================================
+10. FECHA Y HORA LOCAL
+============================================================================
+
+type="datetime-local"
+
+Permite seleccionar conjuntamente:
+
+    FECHA + HORA
+
+Ejemplo:
+
+    <label>
+        Fecha y hora de la cita:
+        <input
+            type="datetime-local"
+            name="cita"
+        >
+    </label>
+
+
+Ejemplo de valor:
+
+    2026-12-15T18:30
+
+
+============================================================================
+11. MES
+============================================================================
+
+type="month"
+
+Permite seleccionar un mes y un año.
+
+Ejemplo:
+
+    <label>
+        Mes:
+        <input
+            type="month"
+            name="mes"
+        >
+    </label>
+
+
+Por ejemplo:
+
+    octubre de 2026
+
+
+============================================================================
+12. SEMANA
+============================================================================
+
+type="week"
+
+Permite seleccionar una semana concreta de un año.
+
+Ejemplo:
+
+    <label>
+        Semana:
+        <input
+            type="week"
+            name="semana"
+        >
+    </label>
+
+
+============================================================================
+13. CASILLA DE VERIFICACIÓN - CHECKBOX
+============================================================================
+
+type="checkbox"
+
+Permite activar o desactivar una opción.
+
+Ejemplo:
+
+    <label>
+        <input
+            type="checkbox"
+            name="aceptaCondiciones"
+        >
+
+        Acepto las condiciones
+    </label>
+
+
+Un checkbox es apropiado para preguntas del tipo:
+
+    SÍ / NO
+
+Por ejemplo:
+
+    [x] Quiero recibir publicidad
+
+    [ ] Recordar mi sesión
+
+
+Podemos hacer que aparezca marcado inicialmente:
+
+    <input
+        type="checkbox"
+        name="newsletter"
+        checked
+    >
+
+
+También podemos asignarle un value:
+
+    <input
+        type="checkbox"
+        name="newsletter"
+        value="si"
+    >
+
+
+============================================================================
+14. VARIOS CHECKBOX
+============================================================================
+
+También podemos utilizar varios checkbox cuando el usuario puede
+seleccionar VARIAS opciones simultáneamente.
+
+Ejemplo:
+
+    <p>Selecciona tus extras:</p>
+
+    <label>
+        <input
+            type="checkbox"
+            name="extras[]"
+            value="lavado"
+        >
+        Lavado
+    </label>
+
+    <label>
+        <input
+            type="checkbox"
+            name="extras[]"
+            value="cejas"
+        >
+        Cejas
+    </label>
+
+    <label>
+        <input
+            type="checkbox"
+            name="extras[]"
+            value="masaje"
+        >
+        Masaje
+    </label>
+
+
+Aquí el usuario podría seleccionar:
+
+    [x] Lavado
+    [x] Cejas
+    [ ] Masaje
+
+
+Si lo enviamos a PHP, extras[] permite recibir varios valores.
+
+Por ejemplo:
+
+    $_POST["extras"]
+
+podría contener:
+
+    [
+        "lavado",
+        "cejas"
+    ]
+
+
+============================================================================
+15. BOTONES RADIO
+============================================================================
+
+type="radio"
+
+Los botones radio se utilizan cuando tenemos varias opciones pero
+queremos que el usuario pueda seleccionar SOLO UNA.
+
+Ejemplo:
+
+    <p>Forma de pago:</p>
+
+    <label>
+        <input
+            type="radio"
+            name="pago"
+            value="tarjeta"
+        >
+        Tarjeta
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="pago"
+            value="efectivo"
+        >
+        Efectivo
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="pago"
+            value="bizum"
+        >
+        Bizum
+    </label>
+
+
+IMPORTANTE:
+
+Todos utilizan:
+
+    name="pago"
+
+Precisamente esto hace que pertenezcan al MISMO GRUPO.
+
+Por tanto solamente podremos seleccionar uno:
+
+    ( ) Tarjeta
+    (x) Efectivo
+    ( ) Bizum
+
+
+Podemos seleccionar uno inicialmente:
+
+    <input
+        type="radio"
+        name="pago"
+        value="efectivo"
+        checked
+    >
+
+
+============================================================================
+CHECKBOX VS RADIO
+============================================================================
+
+CHECKBOX:
+
+    [x] Lavado
+    [x] Cejas
+    [ ] Masaje
+
+Puede haber VARIOS seleccionados.
+
+
+RADIO:
+
+    ( ) Tarjeta
+    (x) Efectivo
+    ( ) Bizum
+
+Normalmente seleccionamos UNO dentro del mismo grupo.
+
+
+============================================================================
+16. RANGO - SLIDER
+============================================================================
+
+type="range"
+
+Crea un control deslizante.
+
+Ejemplo:
+
+    <label>
+        Volumen:
+        <input
+            type="range"
+            name="volumen"
+            min="0"
+            max="100"
+            value="50"
+        >
+    </label>
+
+
+Podemos establecer:
+
+    min     -> mínimo
+    max     -> máximo
+    step    -> incremento
+    value   -> valor inicial
+
+
+Ejemplo:
+
+    <input
+        type="range"
+        name="puntuacion"
+        min="0"
+        max="10"
+        step="1"
+        value="5"
+    >
+
+
+============================================================================
+17. COLOR
+============================================================================
+
+type="color"
+
+Permite seleccionar un color.
+
+Ejemplo:
+
+    <label>
+        Selecciona un color:
+        <input
+            type="color"
+            name="color"
+        >
+    </label>
+
+
+Normalmente el navegador mostrará un selector gráfico de colores.
+
+El valor suele representarse en hexadecimal.
+
+Por ejemplo:
+
+    #ff0000
+
+
+============================================================================
+18. ARCHIVO
+============================================================================
+
+type="file"
+
+Permite seleccionar un archivo del dispositivo.
+
+Ejemplo:
+
+    <label>
+        Selecciona una imagen:
+        <input
+            type="file"
+            name="foto"
+        >
+    </label>
+
+
+Podemos limitar los tipos de archivo mediante accept:
+
+    <input
+        type="file"
+        name="foto"
+        accept="image/*"
+    >
+
+
+También podemos permitir seleccionar varios archivos:
+
+    <input
+        type="file"
+        name="fotos[]"
+        multiple
+    >
+
+
+IMPORTANTE EN PHP:
+
+Los archivos subidos NO aparecen normalmente en:
+
+    $_POST
+
+PHP utiliza:
+
+    $_FILES
+
+
+Por ejemplo:
+
+    $_FILES["foto"]
+
+
+Además, para subir archivos mediante un formulario normalmente
+necesitamos:
+
+    <form
+        method="post"
+        enctype="multipart/form-data"
+    >
+
+
+============================================================================
+19. CAMPO OCULTO
+============================================================================
+
+type="hidden"
+
+Crea un campo que NO aparece visualmente en el formulario.
+
+Ejemplo:
+
+    <input
+        type="hidden"
+        name="productoId"
+        value="23"
+    >
+
+
+El usuario no lo ve como un campo normal, pero su valor puede
+enviarse junto con el formulario.
+
+Por ejemplo:
+
+    productoId=23
+
+
+IMPORTANTE:
+
+OCULTO NO SIGNIFICA SEGURO.
+
+El usuario puede inspeccionar y modificar el HTML utilizando
+las herramientas del navegador.
+
+Por tanto, nunca debemos confiar en un dato simplemente porque
+proceda de un input hidden.
+
+Debemos validarlo también en el servidor.
+
+
+============================================================================
+20. BOTÓN SUBMIT
+============================================================================
+
+type="submit"
+
+Crea un botón cuya finalidad es ENVIAR el formulario.
+
+Ejemplo:
+
+    <input
+        type="submit"
+        value="Enviar"
+    >
+
+
+También podemos utilizar:
+
+    <button type="submit">
+        Enviar
+    </button>
+
+
+Actualmente suele resultar más flexible utilizar <button>.
+
+
+============================================================================
+21. BOTÓN RESET
+============================================================================
+
+type="reset"
+
+Restablece los campos del formulario a sus valores iniciales.
+
+Ejemplo:
+
+    <input
+        type="reset"
+        value="Limpiar formulario"
+    >
+
+
+También:
+
+    <button type="reset">
+        Limpiar
+    </button>
+
+
+Hay que utilizarlo con cuidado porque el usuario puede pulsarlo
+accidentalmente y perder los datos que estaba introduciendo.
+
+
+============================================================================
+22. BOTÓN GENÉRICO
+============================================================================
+
+type="button"
+
+Crea un botón que por sí solo NO envía el formulario.
+
+Ejemplo:
+
+    <input
+        type="button"
+        value="Calcular precio"
+    >
+
+
+Actualmente suele escribirse:
+
+    <button type="button">
+        Calcular precio
+    </button>
+
+
+Este tipo de botón es especialmente útil cuando queremos asociarle
+comportamiento mediante JavaScript.
+
+Por ejemplo:
+
+    botón
+      |
+      v
+    click
+      |
+      v
+    JavaScript
+      |
+      v
+    calcularPrecio()
+
+
+============================================================================
+23. BOTÓN CON IMAGEN
+============================================================================
+
+type="image"
+
+Permite utilizar una imagen como botón de envío del formulario.
+
+Ejemplo:
+
+    <input
+        type="image"
+        src="enviar.png"
+        alt="Enviar formulario"
+    >
+
+
+Su comportamiento está relacionado con un botón submit, pero utiliza
+una imagen como representación visual.
+
+
+============================================================================
+RESUMEN DE LOS PRINCIPALES TYPE
+============================================================================
+
+    type="text"             Texto
+
+    type="password"         Contraseña
+
+    type="email"            Email
+
+    type="number"           Número
+
+    type="tel"              Teléfono
+
+    type="url"              URL
+
+    type="search"           Búsqueda
+
+    type="date"             Fecha
+
+    type="time"             Hora
+
+    type="datetime-local"   Fecha + hora
+
+    type="month"            Mes
+
+    type="week"             Semana
+
+    type="checkbox"         Varias opciones / sí-no
+
+    type="radio"            Una opción de un grupo
+
+    type="range"            Control deslizante
+
+    type="color"            Selector de color
+
+    type="file"             Selección de archivos
+
+    type="hidden"           Dato oculto
+
+    type="submit"           Enviar formulario
+
+    type="reset"            Restablecer formulario
+
+    type="button"           Botón genérico
+
+    type="image"            Botón de envío con imagen
+
+
+============================================================================
+ATRIBUTOS MUY IMPORTANTES DE <input>
+============================================================================
+
+name
+----
+
+Indica el nombre con el que se enviará el dato.
+
+    <input name="nombre">
+
+PHP:
+
+    $_GET["nombre"]
+
+o:
+
+    $_POST["nombre"]
+
+
+--------------------------------------------------------------------------
+
+value
+-----
+
+Indica el valor del campo.
+
+    <input
+        type="text"
+        name="nombre"
+        value="José"
+    >
+
+
+--------------------------------------------------------------------------
+
+placeholder
+-----------
+
+Muestra un texto orientativo mientras el campo está vacío.
+
+    <input
+        type="text"
+        placeholder="Escribe tu nombre"
+    >
+
+
+No debe confundirse con value.
+
+placeholder es una AYUDA visual.
+No es el valor real del campo.
+
+
+--------------------------------------------------------------------------
+
+required
+--------
+
+Hace que el navegador considere obligatorio el campo.
+
+    <input
+        type="email"
+        name="email"
+        required
+    >
+
+
+--------------------------------------------------------------------------
+
+min / max
+---------
+
+Establecen límites.
+
+    <input
+        type="number"
+        min="1"
+        max="10"
+    >
+
+
+--------------------------------------------------------------------------
+
+minlength / maxlength
+---------------------
+
+Controlan la longitud de determinados campos de texto.
+
+    <input
+        type="text"
+        minlength="3"
+        maxlength="30"
+    >
+
+
+--------------------------------------------------------------------------
+
+step
+----
+
+Establece el incremento permitido en determinados controles.
+
+    <input
+        type="number"
+        min="0"
+        max="100"
+        step="5"
+    >
+
+
+--------------------------------------------------------------------------
+
+checked
+-------
+
+Se utiliza principalmente con checkbox y radio.
+
+    <input
+        type="checkbox"
+        checked
+    >
+
+
+--------------------------------------------------------------------------
+
+disabled
+--------
+
+Desactiva un campo.
+
+    <input
+        type="text"
+        name="usuario"
+        disabled
+    >
+
+
+El usuario no puede modificarlo.
+
+IMPORTANTE:
+
+Los controles disabled normalmente NO se envían con el formulario.
+
+
+--------------------------------------------------------------------------
+
+readonly
+--------
+
+Hace que un campo sea de solo lectura.
+
+    <input
+        type="text"
+        name="codigo"
+        value="ABC123"
+        readonly
+    >
+
+
+El usuario no puede modificarlo, pero existe una diferencia importante
+respecto a disabled:
+
+    readonly  -> normalmente SÍ se envía.
+
+    disabled  -> normalmente NO se envía.
+
+
+--------------------------------------------------------------------------
+
+multiple
+--------
+
+Permite seleccionar varios valores cuando el tipo de control
+lo admite.
+
+Por ejemplo:
+
+    <input
+        type="file"
+        name="archivos[]"
+        multiple
+    >
+
+
+También puede utilizarse, por ejemplo, con email:
+
+    <input
+        type="email"
+        name="emails"
+        multiple
+    >
+
+
+--------------------------------------------------------------------------
+
+accept
+------
+
+Se utiliza principalmente con archivos para indicar qué tipos
+queremos permitir en el selector.
+
+Ejemplo:
+
+    <input
+        type="file"
+        name="foto"
+        accept="image/*"
+    >
+
+
+--------------------------------------------------------------------------
+
+autocomplete
+------------
+
+Da indicaciones al navegador sobre el autocompletado.
+
+Ejemplo:
+
+    <input
+        type="text"
+        name="nombre"
+        autocomplete="name"
+    >
+
+Otro ejemplo:
+
+    <input
+        type="email"
+        name="email"
+        autocomplete="email"
+    >
+
+
+============================================================================
+EJEMPLO COMPLETO
+============================================================================
+
+<form method="post">
+
+    <label>
+        Nombre:
+        <input
+            type="text"
+            name="nombre"
+            required
+        >
+    </label>
+
+    <br>
+
+    <label>
+        Email:
+        <input
+            type="email"
+            name="email"
+            required
+        >
+    </label>
+
+    <br>
+
+    <label>
+        Edad:
+        <input
+            type="number"
+            name="edad"
+            min="16"
+            max="120"
+        >
+    </label>
+
+    <br>
+
+    <p>Forma de pago:</p>
+
+    <label>
+        <input
+            type="radio"
+            name="pago"
+            value="tarjeta"
+        >
+        Tarjeta
+    </label>
+
+    <label>
+        <input
+            type="radio"
+            name="pago"
+            value="efectivo"
+        >
+        Efectivo
+    </label>
+
+    <br>
+
+    <label>
+        <input
+            type="checkbox"
+            name="condiciones"
+            value="si"
+            required
+        >
+        Acepto las condiciones
+    </label>
+
+    <br>
+
+    <button type="submit">
+        Enviar
+    </button>
+
+</form>
+
+
+============================================================================
+IDEA FUNDAMENTAL PARA PHP
+============================================================================
+
+No debemos quedarnos únicamente con el aspecto visual del input.
+
+Lo realmente importante cuando conectemos HTML con PHP será:
+
+              FORMULARIO HTML
+                     |
+                     v
+                atributo name
+                     |
+                     v
+              petición HTTP
+                 /       \
+               GET       POST
+                |          |
+                v          v
+             $_GET      $_POST
+
+
+Por ejemplo:
+
+    <input
+        type="text"
+        name="nombre"
+    >
+
+                |
+                | Usuario escribe "Pepe"
+                v
+
+    nombre=Pepe
+
+                |
+                v
+
+    $_POST["nombre"]
+
+                |
+                v
+
+    PHP recibe "Pepe"
+
+
+Y recuerda:
+
+La validación realizada por HTML en el navegador es útil para mejorar
+la experiencia del usuario, pero NO debemos confiar exclusivamente
+en ella.
+
+Los datos que llegan al servidor deben volver a validarse en PHP.
+
+Regla:
+
+    DATOS EXTERNOS
+          |
+          v
+    VALIDAR AL ENTRAR
+          |
+          v
+       PROCESAR
+          |
+          v
+    ESCAPAR AL SALIR
+
+============================================================================
+-->
+
+
+    <!--
+Cerramos <body> porque hemos terminado el contenido
+visible de nuestra página.
+-->
+<br>
+<br>
+
+<!--
+=========================================================
+1. SELECT: LISTA DESPLEGABLE DE SELECCIÓN ÚNICA
+=========================================================
+
+La etiqueta SELECT permite crear un control de selección.
+
+Por defecto, el usuario puede seleccionar UNA opción
+de entre las disponibles.
+
+Dentro de SELECT utilizamos:
+
+- OPTION: representa una opción individual.
+- OPTGROUP: agrupa opciones relacionadas.
+
+LABEL:
+Proporciona un nombre descriptivo al control.
+
+ATRIBUTO FOR:
+Relaciona el LABEL con el control cuyo ID coincida.
+
+En este caso:
+
+for="variedad" se relaciona con id="variedad".
+
+Esto mejora la accesibilidad porque los lectores
+de pantalla pueden identificar el propósito del control.
+
+También permite activar o enfocar el control al pulsar
+sobre su etiqueta.
+-->
+
+<label for="variedad">Variedades:</label>
+
+<!--
+SELECT:
+
+id="variedad":
+    Identificador único del elemento.
+
+name="variedad":
+    Nombre con el que se enviaría el dato
+    si el control estuviera dentro de un formulario.
+
+Por ejemplo, si seleccionamos Holandés,
+se enviaría un parámetro equivalente a:
+
+variedad=Holandes
+
+IMPORTANTE:
+
+ID identifica el elemento dentro del documento.
+
+NAME identifica el dato durante el envío.
+-->
+
+<select id="variedad" name="variedad">
+
+    <!--
+    OPTION:
+
+    Representa una opción disponible.
+
+    ATRIBUTO VALUE:
+
+    value="" indica que esta opción no tiene
+    un valor útil para el formulario.
+
+    El texto situado entre las etiquetas OPTION
+    es lo que ve el usuario.
+
+    En este caso:
+
+    Texto visible: -Elige un tipo-
+    Valor: cadena vacía.
+
+    Si añadimos REQUIRED al SELECT,
+    esta primera opción puede servir para
+    exigir una selección válida.
+
+    En este ejemplo no hemos añadido REQUIRED,
+    por lo que la selección es opcional.
+    -->
+
+    <option value="">-Elige un tipo-</option>
+
+
+    <!--
+    OPTGROUP: AGRUPACIÓN DE OPCIONES
+
+    Permite organizar opciones relacionadas
+    dentro de un SELECT.
+
+    ATRIBUTO LABEL:
+
+    label="Clásicos"
+
+    Establece el nombre del grupo.
+
+    Este texto permite identificar visualmente
+    las opciones pertenecientes a la categoría.
+
+    Los lectores de pantalla también pueden
+    utilizar esta información para proporcionar
+    contexto durante la selección.
+
+    IMPORTANTE:
+
+    OPTGROUP no representa una opción seleccionable.
+
+    Es un agrupador de opciones.
+
+    Por tanto, "Clásicos" no se selecciona
+    como si fuera un producto.
+    -->
+
+    <optgroup label="Clásicos">
+
+        <!--
+        Cada OPTION contiene:
+
+        VALUE:
+            Valor asociado a la opción.
+
+        TEXTO INTERIOR:
+            Texto que se muestra al usuario.
+
+        No es obligatorio que ambos coincidan.
+
+        Por ejemplo:
+
+        value="Holandes"
+        Texto visible: Holandés
+
+        Se puede utilizar un valor sin tildes
+        para facilitar su tratamiento posterior,
+        aunque no es una obligación de HTML.
+        -->
+
+        <option value="Holandes">Holandés</option>
+
+        <option value="Espanhol">Español</option>
+
+    </optgroup>
+
+
+    <!--
+    SEGUNDO OPTGROUP:
+
+    Agrupa las variedades modernas.
+
+    El atributo LABEL proporciona el nombre
+    visible del grupo.
+
+    Podemos tener varios OPTGROUP dentro
+    de un mismo SELECT.
+    -->
+
+    <optgroup label="Moderno">
+
+        <option value="Pelao">Pelao</option>
+
+    </optgroup>
+
+</select>
+
+
+<!--
+=========================================================
+2. SELECT CON SELECCIÓN MÚLTIPLE
+=========================================================
+
+En este segundo ejemplo utilizamos SELECT
+con dos atributos importantes:
+
+MULTIPLE:
+    Permite seleccionar varias opciones.
+
+SIZE:
+    Indica cuántas filas de opciones
+    queremos mostrar inicialmente.
+
+A diferencia del SELECT anterior,
+este control puede mostrar una lista
+en lugar de un desplegable convencional.
+
+El usuario puede seleccionar varios lotes.
+
+En Windows, habitualmente podemos utilizar:
+
+- Ctrl + clic: seleccionar opciones separadas.
+- Shift + clic: seleccionar un intervalo.
+
+El comportamiento exacto depende del navegador
+y del sistema operativo.
+
+ACCESIBILIDAD:
+
+Debemos explicar al usuario que puede seleccionar
+varias opciones, ya que no siempre resulta evidente.
+-->
+
+<br>
+<br>
+
+<!--
+LABEL:
+
+Proporciona el nombre del segundo SELECT.
+
+El atributo FOR apunta a id="lotes".
+
+Esto permite que las tecnologías de asistencia
+relacionen el texto con el control.
+-->
+
+<label for="lotes">
+    Lote (elige varios si quieres):
+</label>
+
+<br>
+
+<!--
+SELECT MÚLTIPLE:
+
+id="lotes":
+    Identificador único.
+
+name="lotes[]":
+    Nombre utilizado durante el envío.
+
+Los corchetes [] son una convención habitual
+en aplicaciones de servidor, especialmente PHP,
+para recibir varios valores como una colección.
+
+IMPORTANTE:
+
+Los corchetes no son necesarios para que
+HTML permita seleccionar varias opciones.
+
+La selección múltiple la habilita MULTIPLE.
+
+multiple:
+    Permite seleccionar varias opciones.
+
+size="5":
+    Solicita mostrar cinco filas de opciones.
+
+En este ejemplo tenemos cuatro opciones
+distribuidas en dos grupos.
+
+Los encabezados OPTGROUP también pueden ocupar
+espacio visual en la lista, dependiendo
+de cómo los represente el navegador.
+-->
+
+<select id="lotes"
+        name="lotes[]"
+        multiple
+        size="5">
+
+
+    <!--
+    PRIMER GRUPO:
+
+    Agrupamos los lotes de categoría PREMIUM.
+
+    OPTGROUP permite organizar las opciones
+    sin convertir el nombre del grupo
+    en una opción seleccionable.
+
+    Cada OPTION tiene su propio VALUE.
+
+    Es importante que los valores sean distintos
+    para poder identificar qué lotes se seleccionaron.
+    -->
+
+    <optgroup label="LOTES PREMIUM">
+
+        <!--
+        Si el usuario selecciona LOTE A,
+        el valor asociado será "A".
+        -->
+
+        <option value="A">LOTE A</option>
+
+        <!--
+        Si selecciona LOTE B,
+        el valor asociado será "B".
+        -->
+
+        <option value="B">LOTE B</option>
+
+    </optgroup>
+
+
+    <!--
+    SEGUNDO GRUPO:
+
+    Contiene los lotes normales.
+
+    Utilizamos la misma estructura semántica.
+    -->
+
+    <optgroup label="LOTES NORMALES">
+
+        <option value="C">LOTE C</option>
+
+        <option value="D">LOTE D</option>
+
+    </optgroup>
+
+</select>
+
+
+<!--
+=========================================================
+3. INPUT TYPE="FILE": SELECCIÓN DE ARCHIVOS
+=========================================================
+
+La etiqueta INPUT representa un control
+de entrada de datos.
+
+Mediante TYPE indicamos qué clase de
+control queremos crear.
+
+En este caso:
+
+type="file"
+
+Permite al usuario seleccionar archivos
+de su dispositivo.
+
+El navegador suele mostrar un botón
+para abrir el selector de archivos.
+
+IMPORTANTE:
+
+Seleccionar un archivo no significa
+que se haya subido a un servidor.
+
+Para enviar realmente los archivos
+necesitaríamos un formulario y un servidor
+capaz de procesarlos.
+
+En un formulario HTML tradicional
+que envíe archivos normalmente utilizaríamos:
+
+method="post"
+enctype="multipart/form-data"
+
+En esta práctica solo estamos construyendo
+el control mediante HTML.
+-->
+
+<br>
+<br>
+
+<!--
+LABEL:
+
+Identifica el propósito del control.
+
+FOR debe coincidir con el ID del INPUT.
+
+Esto mejora la accesibilidad y permite
+asociar el texto al selector de archivos.
+-->
+
+<label for="facturas">
+    Adjuntar facturas:
+</label>
+
+<!--
+INPUT TYPE="FILE":
+
+id="facturas":
+    Identificador del control.
+
+name="facturas[]":
+    Nombre del dato en un eventual envío.
+
+type="file":
+    Permite seleccionar archivos.
+
+accept=".pdf,.jpg":
+    Indica los tipos de archivos que
+    el selector debería ofrecer o priorizar.
+
+En este caso:
+
+.pdf:
+    Archivos PDF.
+
+.jpg:
+    Imágenes JPEG con extensión .jpg.
+
+IMPORTANTE:
+
+ACCEPT funciona como una indicación
+para el selector de archivos.
+
+No es una medida de seguridad.
+
+El servidor debe comprobar realmente
+el tipo y contenido de los archivos recibidos.
+
+MULTIPLE:
+
+Permite seleccionar más de un archivo
+en una misma operación.
+
+Sin MULTIPLE, el control normalmente
+solo permite seleccionar un archivo.
+
+PRUEBA:
+
+1. Pulsar sobre el selector.
+2. Buscar archivos PDF o JPG.
+3. Seleccionar varios archivos.
+4. Comprobar cómo aparecen identificados
+   en el control del navegador.
+-->
+
+<input
+    type="file"
+    id="facturas"
+    name="facturas[]"
+    accept=".pdf,.jpg"
+    multiple>
+
+
+<!--
+=========================================================
+4. TEXTAREA: INTRODUCCIÓN DE TEXTO MULTILÍNEA
+=========================================================
+
+TEXTAREA representa un control destinado
+a introducir texto en varias líneas.
+
+Es útil para:
+
+- Observaciones.
+- Comentarios.
+- Descripciones.
+- Consultas.
+- Mensajes largos.
+
+DIFERENCIA ENTRE INPUT Y TEXTAREA:
+
+INPUT TYPE="TEXT":
+    Permite introducir texto en una línea.
+
+TEXTAREA:
+    Permite introducir texto en varias líneas.
+
+Otra diferencia importante:
+
+INPUT es un elemento vacío.
+
+TEXTAREA tiene etiqueta de apertura
+y etiqueta de cierre.
+
+El contenido escrito inicialmente entre
+ambas etiquetas se utiliza como valor
+inicial del control.
+-->
+
+<br>
+<br>
+
+<!--
+LABEL:
+
+Asocia el texto "Observaciones" al TEXTAREA.
+
+El atributo FOR debe coincidir
+con el atributo ID del control.
+
+Esto permite que un lector de pantalla
+identifique el campo correctamente.
+-->
+
+<label for="observaciones">
+    Observaciones:
+</label>
+
+<br>
+<br>
+
+<!--
+TEXTAREA:
+
+id="observaciones":
+    Identificador único.
+
+name="observaciones":
+    Nombre utilizado durante el envío.
+
+rows="8":
+    Indica que queremos mostrar
+    aproximadamente ocho filas de texto.
+
+cols="40":
+    Indica una anchura aproximada
+    de cuarenta columnas de caracteres.
+
+IMPORTANTE:
+
+ROWS y COLS establecen dimensiones iniciales
+del control, pero no limitan por sí mismos
+la cantidad de texto que podemos introducir.
+
+Para limitar la longitud podríamos utilizar:
+
+maxlength="200"
+
+Para exigir una longitud mínima:
+
+minlength="10"
+
+Para hacer obligatorio el campo:
+
+required
+
+En este ejemplo no establecemos
+ninguna de estas restricciones.
+-->
+
+<textarea
+    id="observaciones"
+    name="observaciones"
+    rows="8"
+    cols="40"></textarea>
+
+
+<!--
+=========================================================
+5. PROGRESS: INDICADOR DE AVANCE DE UNA TAREA
+=========================================================
+
+PROGRESS es una etiqueta semántica de HTML5.
+
+Representa el progreso de una tarea
+que todavía no ha terminado.
+
+Ejemplos:
+
+- Subida de archivos.
+- Descarga de documentos.
+- Procesamiento de datos.
+- Instalación de una aplicación.
+- Ejecución de una tarea.
+
+ATRIBUTO VALUE:
+
+Indica cuánto ha avanzado la tarea.
+
+ATRIBUTO MAX:
+
+Indica el valor máximo que representa
+la finalización de la tarea.
+
+En nuestro ejemplo:
+
+value="60"
+max="100"
+
+Esto significa:
+
+60 / 100 = 0,60 = 60 %
+
+Por tanto, el progreso representado es del 60 %.
+
+IMPORTANTE:
+
+PROGRESS no calcula automáticamente
+el avance real de una operación.
+
+Aquí estamos mostrando un valor fijo.
+
+Para actualizar el progreso en tiempo real,
+normalmente necesitaríamos JavaScript
+y alguna operación cuyo avance pudiéramos medir.
+
+Este ejemplo sirve para estudiar
+la estructura y semántica del elemento.
+
+DIFERENCIA ENTRE PROGRESS Y METER:
+
+PROGRESS:
+    Representa el avance de una tarea.
+
+METER:
+    Representa una medida dentro
+    de un intervalo conocido.
+
+Por ejemplo:
+
+PROGRESS:
+    Una descarga completada al 60 %.
+
+METER:
+    Una batería que tiene un 60 % de carga.
+
+ACCESIBILIDAD:
+
+Asociamos un LABEL al PROGRESS mediante
+los atributos FOR e ID.
+
+Así proporcionamos un nombre descriptivo
+que ayuda a identificar qué tarea
+está representando el indicador.
+
+El texto situado entre las etiquetas
+PROGRESS sirve como contenido alternativo
+para entornos que no representen el control.
+-->
+
+<br>
+<br>
+
+<label for="progreso">
+    Progreso de procesamiento de facturas:
+</label>
+
+<br>
+
+<progress
+    id="progreso"
+    value="60"
+    max="100">
+    60 %
+</progress>
+
+
+</body>
+
+
+<!--
+Finalmente cerramos la etiqueta <html>.
+
+Esto marca el final de nuestro documento HTML.
+-->
+
+</html>
